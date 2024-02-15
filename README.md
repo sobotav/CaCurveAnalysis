@@ -59,7 +59,7 @@ These are examples of fluorescence curves from calcium-6 loaded platelets stimul
 These are examples of fluorescence curves from calcium-6 loaded platelets stimulated with CRP (10 ug/mL) in 1536-well plate with FLIPR. The fluorescence curves are analyzed and visualized by running the script `dataAnalysis_CRP_n02.m`. If the script is executed well, the following graph should appear:
 ![Sample graph](/graphs/n02_CRP.png?raw=true)
 
-### Thrombin, 1536 well-plate
+### Thrombin, 1536-well plate
 These are examples of fluorescence curves from calcium-6 loaded platelets stimulated with thrombin (4 nM) in 96 well plate with FLIPR. The fluorescence curves are analyzed and visualized by running the script `dataAnalysis_Thr_n02.m`. If the script is executed well, the following graph should appear:
 ![Sample graph](/graphs/n02_Thr.png?raw=true)
 
