@@ -2,7 +2,7 @@
 This repository contains MATLAB scripts with implementation of the method for automated analysis of calcium-6 fluorescence curves. The method performance is demonstrated on four sets of calcium-6 fluorescence curves. This software is licensed under the GNU GPL v3. In case of any questions please contact vladimir.sobota@ihu-liryc.fr.
 
 ## Data analysis
-The fluorescence curves were obtained from 96 and 1536-well plates. The signal analysis is slightly different for each type of the well plate. The data are therefore analyzed by two different functions: `analyzeData_96.m` for the 96-well plate and `analyzeData_1536.m` for the 1536-well plate.
+The fluorescence curves were obtained from 96 and 1536-well plate assays with human calcium-6-loaded platelets. In the 96-well plate the tested compound was pre-incubated so the fluorescence curve shows only the response to the agonist (collagen-related peptide, CRP, or thrombin). In the 1536-well plate the tested compound was added first, followed by the agonist addition, so the fluorescent curves are slightly different for each type of the well plate. The data are therefore analyzed by two different functions: `analyzeData_96.m` for the 96-well plate and `analyzeData_1536.m` for the 1536-well plate.
 
 The input parameters of the analysis are set up at the beginning of the script. The following parameters are used for the curves from 96-well plates:
 
@@ -28,7 +28,7 @@ inputParams.windowCompoundAddition  = [0,100];          % time window for the co
 inputParams.windowAgonistAddition   = [200,300];        % time window for the agonist addition effect
 ```
 
-The results of the analysis are saved in the `results` matrix for each fluorescence curve. The order of the saved parameters is contained in the variable `resultsLabel`:
+The results are saved in the `results` matrix for each fluorescence curve. The order of the saved parameters is described in the variable `resultsLabel`:
 ```
 AUC
 Ca increase
@@ -44,6 +44,11 @@ Slope 3 duration
 ```
 
 Please note that for the 1536-well plate the output parameter `Median fluorescence before peak start` is replaced by the parameters `Median fluorescence before the compound addition` and `Median fluorescence before the agonist addition`.
+
+### Visualization
+Some of the parameters are visualized in the figures below as follows:
+
+![Sample graph](/graphs/graph_analysis.png?raw=true)
 
 ## Available data sets
 
