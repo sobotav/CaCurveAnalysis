@@ -1,10 +1,7 @@
 # Automated analysis of calcium-6 fluorescence curves
-This repository contains MATLAB scripts with implementation of a method for automated analysis of fluorescence curves obtained from human calcium-6-loaded platelets. The method performance is demonstrated on four sets of fluorescence curves. The software is licensed under the GNU GPL v3.
+This repository contains MATLAB scripts with implementation of a method for automated analysis of fluorescence curves obtained from human calcium-6-loaded platelets. The method performance is demonstrated on four sets of fluorescence curves. The software is licensed under the GNU GPL v3. More details about the dataset and the method can be found in the following study: 
 
-More details about the dataset and the method can be found in the following study: 
-
-**Fernández, D.I. _et al._ Ultra-high throughput screening for the discovery of antiplatelet drugs affecting receptor dependent calcium signaling dynamics**, submitted to _Scientific Reports_.
-
+**Fernández, D.I. _et al._ Ultra-high throughput screening for the discovery of antiplatelet drugs affecting receptor dependent calcium signaling dynamics**, _Scientific Reports_ **14**(1):6229. DOI: 10.1038/s41598-024-56799-4. Available [here](https://www.nature.com/articles/s41598-024-56799-4).
 
 ## Data analysis
 The fluorescence curves were obtained from 96 and 1536-well plate assays with human calcium-6-loaded platelets. In the 96-well plate the tested compound was pre-incubated, so the fluorescence curve shows only the response to the agonist (collagen-related peptide, CRP, or thrombin). In the 1536-well plate the tested compound was added first, followed by the agonist addition. Since the fluorescent curves are  slightly different for each type of the well plate, they are analyzed by two distinct functions: `analyzeData_96.m` for the 96-well plate and `analyzeData_1536.m` for the 1536-well plate.
